@@ -1,6 +1,6 @@
 import Register from "./register";
 import NavBar from "./navbar";
 import Login from "./login";
-import Admin from "./admin";
+import Home from "./home";
 
-export { Admin, Login, Register, NavBar } 
+export { Home, Login, Register, NavBar } 
