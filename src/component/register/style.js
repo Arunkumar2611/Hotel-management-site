@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
   flex-direction: column;
     display: inline-flex;
     align-items: center;
-    margin-block: 80px;
+    margin-block: 10px;
 `;
 
 export const Div= styled.div`

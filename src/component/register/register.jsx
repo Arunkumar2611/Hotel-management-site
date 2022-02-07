@@ -9,6 +9,7 @@ export default function Register() {
   const [mobileno, setMobile_No] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmpassword, setConfirm_Password] = useState("");
 
   const handleFirst_Name = (e) => {
     setFirst_Name(e.target.value);
@@ -30,17 +31,23 @@ export default function Register() {
     setPassword(e.target.value);
   };
 
+  const handleConfirm_Password = (e) => {
+    setConfirm_Password(e.target.value);
+  };
+
   const handleSubmit = () => {
     console.log("firstname is ", firstname);
     console.log("lastname is ", lastname);
     console.log("mobileno is ", mobileno);
     console.log("email is ", email);
     console.log("password is ", password);
+    console.log("Confirm password is ", confirmpassword);
     setFirst_Name("");
     setLast_Name("");
     setMobile_No("");
     setEmail("");
     setPassword("");
+    setConfirm_Password("");
   };
 
   return (
@@ -106,6 +113,17 @@ export default function Register() {
             variant="outlined"
             value={password}
             onChange={handlePassword}
+            sx={{ m: 1, width: '40ch' }}
+          />
+        </Div>
+        <Div>
+          <TextField
+            id="confirmpassword"
+            label="Confirm Password"
+            type="confirmpassword"
+            variant="outlined"
+            value={confirmpassword}
+            onChange={handleConfirm_Password}
             sx={{ m: 1, width: '40ch' }}
           />
         </Div>
