@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
-import { Typography, Button } from "@material-ui/core";
+import { Wrapper, Div } from "./style";
+import { Typography, Button, Avatar } from "@material-ui/core";
 import { TextField } from "@mui/material";
 
 export default function Login() {
@@ -18,36 +18,50 @@ export default function Login() {
   const handleSubmit = () => {
     console.log("email is ", email);
     console.log("password is ", password);
-  }
+    setEmail("");
+    setPassword("");
+  };
 
   return (
-    <div>
-      <Typography component="h1" variant="h5">
-        Sign in
-      </Typography>
+    <Wrapper>
+      <Div>
+      <Avatar>H</Avatar>
+      </Div>
+      <Div>
+        <Typography component="h1" variant="h5">
+          Sign in
+        </Typography>
+      </Div>
       <form>
-        <TextField
-          id="email"
-          label="Email"
-          type="email"
-          variant="outlined"
-          value={email}
-          onChange={handleEmail}
-        />
+        <Div>
+          <TextField
+            id="email"
+            label="Email"
+            type="email"
+            variant="outlined"
+            value={email}
+            onChange={handleEmail}
+            sx={{ m: 1, width: '40ch' }}
+          />
+        </Div>
+        <Div>
+          <TextField
+            id="password"
+            label="Password"
+            type="password"
+            variant="outlined"
+            value={password}
+            onChange={handlePassword}
+            sx={{ m: 1, width: '40ch' }}
+          />
+        </Div>
         <br />
-        <TextField
-          id="password"
-          label="Password"
-          type="password"
-          variant="outlined"
-          value={password}
-          onChange={handlePassword}
-        />
-        <br />
-        <Button variant="contained" color="primary" onClick={handleSubmit}>
-          Submit
-        </Button>
+        <Div>
+          <Button variant="contained" color="primary" fullWidth size="large" onClick={handleSubmit}>
+            Login
+          </Button>
+        </Div>
       </form>
-    </div>
+    </Wrapper>
   );
 }
