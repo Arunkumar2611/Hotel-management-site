@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "../App";
-import { Admin, Login, Register } from "../component";
+import { Login, Register } from "../component";
 
 const PrivateRoutes = () => {
   return (
@@ -11,7 +11,6 @@ const PrivateRoutes = () => {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
       </Route>
-      <Route path="admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );

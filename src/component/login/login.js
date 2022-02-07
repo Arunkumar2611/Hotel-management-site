@@ -1,35 +1,53 @@
-import * as React from "react";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import SimpleDialog from "../dialog";
+import React, { useState } from "react";
+
+import { Typography, Button } from "@material-ui/core";
+import { TextField } from "@mui/material";
 
 export default function Login() {
-  const [open, setOpen] = React.useState(false);
-  const [selectedValue, setSelectedValue] = React.useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleClickOpen = () => {
-    setOpen(true);
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
   };
 
-  const handleClose = (value) => {
-    setOpen(false);
-    setSelectedValue(value);
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
   };
+
+  const handleSubmit = () => {
+    console.log("email is ", email);
+    console.log("password is ", password);
+  }
 
   return (
     <div>
-      <Typography variant="subtitle1" component="div">
-        Selected: {selectedValue}
+      <Typography component="h1" variant="h5">
+        Sign in
       </Typography>
-      <br />
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open simple dialog
-      </Button>
-      <SimpleDialog
-        selectedValue={selectedValue}
-        open={open}
-        onClose={handleClose}
-      />
+      <form>
+        <TextField
+          id="email"
+          label="Email"
+          type="email"
+          variant="outlined"
+          value={email}
+          onChange={handleEmail}
+        />
+        <br />
+        <TextField
+          id="password"
+          label="Password"
+          type="password"
+          variant="outlined"
+          value={password}
+          onChange={handlePassword}
+        />
+        <br />
+        <Button variant="contained" color="primary" onClick={handleSubmit}>
+          Submit
+        </Button>
+      </form>
     </div>
   );
 }
