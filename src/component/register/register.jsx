@@ -53,11 +53,8 @@ export default function Register() {
   return (
     <Wrapper>
       <Div>
-      <Avatar>H</Avatar>
-      </Div>
-      <Div>
         <Typography component="h1" variant="h5">
-          Sign in
+          Sign Up
         </Typography>
       </Div>
       <form>
@@ -87,7 +84,7 @@ export default function Register() {
           <TextField
             id="mobileno"
             label="Mobile Number"
-            type="mobileno"
+            type="number"
             variant="outlined"
             value={mobileno}
             onChange={handleMobile_No}
@@ -109,7 +106,7 @@ export default function Register() {
           <TextField
             id="password"
             label="Password"
-            type="password"
+            type="text"
             variant="outlined"
             value={password}
             onChange={handlePassword}
@@ -120,7 +117,7 @@ export default function Register() {
           <TextField
             id="confirmpassword"
             label="Confirm Password"
-            type="confirmpassword"
+            type="text"
             variant="outlined"
             value={confirmpassword}
             onChange={handleConfirm_Password}
@@ -130,7 +127,7 @@ export default function Register() {
         <br />
         <Div>
           <Button variant="contained" color="primary" fullWidth size="large" onClick={handleSubmit}>
-            Login
+            Submit
           </Button>
         </Div>
       </form>

@@ -8,11 +8,19 @@ export const Wrapper = styled.section`
   flex-direction: column;
     display: inline-flex;
     align-items: center;
-    margin-block: 10px;
+    margin-block: 80px;
+    padding-bottom: 50px;
 `;
 
 export const Div= styled.div`
 padding: 0.2em;
 color: gray;
+`;
+
+
+export const A= styled.a`
+margin-top: 25px;
+color: blue;
+text-decoration: none;
 `;
 

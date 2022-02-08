@@ -12,7 +12,6 @@ export default function NavBar() {
             <Link to="/" style={{ textDecoration: 'none', color: "white" }}>HMS Hotel</Link>
           </Typography>
           <Button color="inherit"><Link to="/login" style={{ textDecoration: 'none', color: "white" }}>Login</Link></Button>
-          <Button color="inherit"><Link to="/register" style={{ textDecoration: 'none', color: "white" }}>Register</Link></Button>
         </Toolbar>
       </AppBar>
     </Box>
