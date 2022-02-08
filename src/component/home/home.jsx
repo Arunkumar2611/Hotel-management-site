@@ -1,5 +1,5 @@
 import React from "react";
-
+import BasicDateRangePicker from "../datepicker";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -22,6 +22,7 @@ const Home = () => {
             gutterBottom
           >
             Over 100,000 hotels and homes across 135 countries
+            <BasicDateRangePicker/>
           </Typography>
         </CardContent>
       </Card>
