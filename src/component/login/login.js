@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Wrapper, Div } from "./style";
+import { Wrapper, Div, A } from "./style";
 import { Typography, Button, Avatar } from "@material-ui/core";
 import { TextField } from "@mui/material";
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -60,6 +61,10 @@ export default function Login() {
           <Button variant="contained" color="primary" fullWidth size="large" onClick={handleSubmit}>
             Login
           </Button>
+        </Div>
+        <br />
+        <Div>
+        <Link to='/register' style={{ textDecoration: 'none', color: "blue" }}>New to HMS? Create an account</Link>
         </Div>
       </form>
     </Wrapper>
