@@ -22,8 +22,8 @@ const Home = () => {
             gutterBottom
           >
             Over 100,000 hotels and homes across 135 countries
-            <BasicDateRangePicker/>
           </Typography>
+            <div className="datePicker"><BasicDateRangePicker /></div>
         </CardContent>
       </Card>
       <Container sx={{ marginTop: 5, marginBottom: 5 }}>
