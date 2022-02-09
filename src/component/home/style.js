@@ -8,5 +8,13 @@ export const StyledItem = styled.div`
   width: 100%;
 
 }
+.datePicker {
+  color: blue;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  background-color: #fff;
+}
+
 `;
 
