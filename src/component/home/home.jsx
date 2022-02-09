@@ -3,11 +3,9 @@ import BasicDateRangePicker from "../datepicker";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { StyledItem } from "./style";
-import CardMedia from "@mui/material/CardMedia";
 
 const Home = () => {
   const [value, setValue] = React.useState([null, null]);
@@ -27,8 +25,10 @@ const Home = () => {
         </CardContent>
       </Card>
       <Container sx={{ marginTop: 5, marginBottom: 5 }}>
-        <Box sx={{ bgcolor: "#cfe8fc", height: "80vh" }}>
-            
+        <Box className="containerss" sx={{ bgcolor: "#cfe8fc", height: "80vh" }}>
+            <div className="imaging">
+                
+            </div>
         </Box>
       </Container>
     </StyledItem>
