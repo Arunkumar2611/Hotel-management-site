@@ -16,11 +16,10 @@ export const StyledItem = styled.div`
   background-size: cover;
 }
 .datePicker {
-  color: blue;
   margin-left: auto;
   margin-right: auto;
-  display: inline-block;
-  background-color: #fff;
+  display: inline-flex;
+  background-color: #cf1111;
 }
 
 `;

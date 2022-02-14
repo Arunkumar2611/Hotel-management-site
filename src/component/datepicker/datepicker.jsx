@@ -21,8 +21,8 @@ export default function BasicDateRangePicker() {
           }}
           renderInput={(startProps, endProps) => (
             <React.Fragment>
-              <TextField {...startProps} />
-              <TextField {...endProps} />
+              <TextField sx={{ backgroundColor: "white",  }} {...startProps} />
+              <TextField sx={{ backgroundColor: "white",  }} {...endProps} />
             </React.Fragment>
           )}
         />
