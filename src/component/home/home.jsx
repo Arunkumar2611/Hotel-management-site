@@ -3,14 +3,11 @@ import BasicDateRangePicker from "../datepicker";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { StyledItem } from "./style";
-import CardMedia from "@mui/material/CardMedia";
 
 const Home = () => {
-  const [value, setValue] = React.useState([null, null]);
 
   return (
     <StyledItem>
