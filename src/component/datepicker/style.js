@@ -6,7 +6,6 @@ export const Div = styled.div`
   font-size: 40px;
   color: white;
   width: 100%;
-
 }
 `;
 
